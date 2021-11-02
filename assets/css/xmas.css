@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+body{
+    font-family: Montserrat;
+    overflow: hidden;
+}
+
+li{
+    list-style: none
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: green;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/greenred.jpg) no-repeat center center / cover;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 6em;
+    color: green;
+}
+
+.icon {
+    font-size: 3rem;
+font-weight: 900;
+color: green;
+letter-spacing: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+    color: green;
+    
+}
+
+.heading {
+    padding: 2em 1em;
+    font-size: 6rem;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+}
+.heading h2 span {
+    display: block;
+    margin-top: -2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: green;
+    padding: 11em 2em 0 6em;
+}
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 70%;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile .profile-content { 
+    margin-left: 1rem;
+}
+
+.profile-content h5 {
+    font-size: 1.4rem;
+}
+
+.foot h3 {
+    font-size: 5rem;
+}
+
+.foot p {
+    font-size: 1.2rem;
+}
+
+.content {
+    background: rgb(206,4,4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start{
+    color: Green;
+    text-transform: capitalize;
+    font-size: 6rem;
+}
+h1 { background-color: rgb(206,4,4);
+    overflow: hidden;
+    font-weight: 900;
+
+}
+h1 span {
+    display: inline-block;
+    transform: translateY(100%);
+}
+
+.music {
+    width: 5px;
+    height: 5px;
+}

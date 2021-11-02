@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Merry Christmas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.gsoogleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/xmas.css" />
+</head>
+<body>
+    <section class="container">
+        <div class="header">
+            <nav>
+                <div class="icon"><img src="assets/img/Santahat.png" alt="profile pic" width="20%"></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Decoration</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Video clips</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="heading">
+            <h2>Merry <span>Christmas!!</span></h2>
+        </div>
+
+        <div class="footer">
+            <div class="profile">
+                <img src="assets/img/profilepic.jpg" alt="profile pic" width="20%">
+                <div class="profile-content">
+                    <h5>Garrett Cutler</h5>
+                    <p>Founder</p>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="foot">
+                    <h3>01</h3>
+                    <p>Lorum ipsum dolor sit amet consectatur aidpiscing elit.  Iste, voluptatum.</p>
+                </div>
+                <div class="foot">
+                    <h3>02</h3>
+                    <p>Lorum ipsum dolor sit amet consectatur aidpiscing elit.  Iste, voluptatum.</p>
+                </div>
+                <div class="foot">
+                    <h3>03</h3>
+                    <p>Lorum ipsum dolor sit amet consectatur aidpiscing elit.  Iste, voluptatum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <div class="start">
+            <h1>
+                <span id="animate">Merry</span>
+            </h1>
+            <h1>
+                <span id="animate">Christmas :)</span>
+            </h1>
+            <h1>
+                <span id="animate">12/25/2021</span>
+            </h1>
+        </div>
+    </div>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <script>
+         let tl = gsap.timeline({defaults: {ease:"SlowMo.easeOut"}});
+
+         tl.to("#animate", {y: '0%', duration:1, stagger:0.2})
+         tl.to(".content", {y: '100%', duration:1.5, delay:0.5})
+         tl.from(".icon", {x:-100, opacity:0, duration:0.5, delay:0.5});
+         tl.from(".container nav li", {x:50, opacity:0, duration:0.5, stagger:0.2});
+         tl.from("h2", {x:-100, opacity:0, duration:1});
+         tl.from(".profile", {x:100, opacity:0, duration:1});
+         tl.from(".foot", {x:50, opacity:0, duration:1, stagger: 0.2 });
+
+     </script>
+     <!-- <embed src="/music/musicfile.wav" autostart="true" loop="false"> -->
+       <div class="music"><iframe id='AmazonMusicEmbedB0094JY86A' src='https://music.amazon.com/embed/B0094JY86A/?id=JM46MrMbs5&marketplaceId=ATVPDKIKX0DER&musicTerritory=US' width='100%' height='290px' style='border:1px solid rgba(0, 0, 0, 0.12);max-width:500px' autostart=true></iframe>
+       </div>
+</body>
+</html>
